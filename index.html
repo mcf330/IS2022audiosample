@@ -1,0 +1,158 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Audio samples from "A compact transformer-based GAN vocoder"</title>
+    <meta charset="UTF-8">
+    <title>A compact transformer-based GAN vocoder</title>
+    <style>
+        red {color: red}
+        audio {width: 250px}
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "A compact transformer-based GAN vocoder"</h1>
+      </header>
+    </article>
+
+<!--    <p><b>Paper:</b> <a href="">arXiv</a></p>-->
+<!--    <p><b>Authors</b>: </p>-->
+
+    <div>
+      <b>Abstract:</b>
+      Recent work has shown that self-attention module in Transformer architecture is an effective way of modeling natural languages and images. In this work, we propose a novel way for audio synthesis using Self-Attention Network (SAN). To the best of our knowledge, there is no successful application of Transformer architecture or SAN in high-fidelity waveform generation tasks. The main challenge in adapting SAN to audio generation tasks lies in its quadratic growth of the computational complexity with respect to the input sequence length, making it impractical with high-resolution audio tasks. To tackle this problem, we apply dilated sliding window to vanilla SAN. This technique enables our model to have large receptive field, linear computational complexity and extremely small footprint. We experimentally show that the proposed model archives smaller model size, while producing audio samples with comparable speech quality in comparison with the best publicly available model. In particular, our small footprint model has only 0.57M parameters and can generate 22.05kHz high-fidelity audio 113 times faster than real-time on a NVIDIA V100 GPU without engineered inference kernels.
+    <p></p>
+    </div>
+
+    <div>Correspondence to:  Chenfeng Miao(Ping An Technology) <a href="mailto:miao_chenfeng@126.com">miao_chenfeng@126.com</a></div>
+
+  
+    <p>&nbsp;</p>
+
+    <div>
+      <a name="db"><h2>Experiments on Databaker Dataset</h2></a>
+      <hr>
+      <table>
+          <thead>
+              <tr>
+              <th>Ground Truth</th><th>HiFi-GAN V1</th><th>HiFi-GAN V2</th><th>MelGAN</th><th>Ours(small)</th><th>Ours(large)</th>
+              </tr>
+            </thead>
+        <tbody>
+        <tr>
+           <td colspan="5"><span>1: The Chronicles of Newgate, Volume two. By Arthur Griffiths. Section four: Newgate down to eighteen eighteen.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="" preload="none"><source src="audios/gt/1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/hifi-v1/1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/hifi-v2/1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/melgan/1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/small/1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/large/1.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="5"><span>2: Under the conditions referred to in the previous chapter,  </span></td>
+         </tr>
+        <tr>
+          <td><audio controls="" preload="none"><source src="audios/gt/2.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v1/2.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v2/2.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/melgan/2.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/small/2.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/large/2.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="5"><span>3: but it was almost always in excess of the accommodation available, and there were times when the place was full to overflowing.</span></td>
+         </tr>
+        <tr>
+          <td><audio controls="" preload="none"><source src="audios/gt/3.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v1/3.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v2/3.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/melgan/3.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/small/3.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/large/3.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="5"><span>4: On the twenty-seventh April, in the following year,</span></td>
+         </tr>
+        <tr>
+          <td><audio controls="" preload="none"><source src="audios/gt/4.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v1/4.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/hifi-v2/4.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/melgan/4.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/small/4.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/large/4.wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="5"><span>5: For two more years these high figures were steadily maintained, and in eighteen oh three the total rose to seven hundred ten.</span></td>
+       </tr>
+      <tr>
+        <td><audio controls="" preload="none"><source src="audios/gt/5.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/hifi-v1/5.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/hifi-v2/5.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/melgan/5.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/small/5.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="audios/large/5.wav"></audio></td>
+      </tr>
+      <tr>
+        <td colspan="5"><span>6: The numbers soon increased, however, and by eighteen eleven had again risen to six hundred twenty-nine; and Mr. Neild was told that there had been at one time</span></td>
+     </tr>
+    <tr>
+      <td><audio controls="" preload="none"><source src="audios/gt/6.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/hifi-v1/6.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/hifi-v2/6.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/melgan/6.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/small/6.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/large/6.wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>7: three hundred debtors and nine hundred criminals in Newgate, or twelve hundred prisoners in all.</span></td>
+   </tr>
+  <tr>
+    <td><audio controls="" preload="none"><source src="audios/gt/7.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="audios/hifi-v1/7.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="audios/hifi-v2/7.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="audios/melgan/7.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="audios/small/7.wav"></audio></td>
+      <td><audio controls="" preload="none"><source src="audios/large/7.wav"></audio></td>
+  </tr>
+  <tr>
+    <td colspan="5"><span>8: Previous to that date there had been seven hundred or eight hundred frequently, and once, in Mr. Akerman's time, one thousand.</span></td>
+ </tr>
+<tr>
+  <td><audio controls="" preload="none"><source src="audios/gt/8.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v1/8.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v2/8.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/melgan/8.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/small/8.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/large/8.wav"></audio></td>
+</tr>
+<tr>
+  <td colspan="5"><span>9: Trustworthy evidence is forthcoming to the effect that these high figures were constantly maintained for many months at a time.</span></td>
+</tr>
+<tr>
+  <td><audio controls="" preload="none"><source src="audios/gt/9.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v1/9.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v2/9.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/melgan/9.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/small/9.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/large/9.wav"></audio></td>
+</tr>
+<tr>
+  <td colspan="5"><span>10: The inadequacy of the jail was noticed and reported upon again and again by the grand juries of the city of London,</span></td>
+</tr>
+<tr>
+  <td><audio controls="" preload="none"><source src="audios/gt/10.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v1/10.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/hifi-v2/10.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/melgan/10.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/small/10.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/large/10.wav"></audio></td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+
+
+</body></html>
